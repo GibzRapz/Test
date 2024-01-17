@@ -2,10 +2,63 @@
 <html>
 
 <head>
-    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <h1>Hello World 2!</h1>
+    <h1>
+        <span id="big-text">Katik</span>
+        <span id="small-text"> Kalkulator Matematik</span>
+    </h1>
+    <div class="container">
+        <h2>Welcome To Katik</h2>
+        <h3>Hai Sobat, Selamat datang di Katik :)</h3>
+        <h3>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</h3>
+        <h4>Persegi</h4>
+
+
+        <div class="container-luas">
+            <h1 style="background-color: rgba(51, 172, 247, 0.973);">
+                <span id="big-text">Luas Persegi</span>
+            </h1>
+
+            <img src="img/persegi.png" alt="Persegi Image" style="display: block; margin: auto;">
+            <br></br>
+
+            <!-- Form -->
+
+            <form id="shape-form">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <p style="text-align: center; font-weight: bold;">
+                    L = S x S
+                </p>
+                <p>Keterangan:</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+
+
+                <h2 style="text-align: center; font-weight: bold; font-size: 40px; margin-bottom: 10px;">
+                    Hitung Luas Persegi
+                </h2>
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <input type="number" id="sideLength" name="sideLength"
+                        style="width: 80%; margin: 0 auto; display: block; margin-bottom: 10px;"
+                        placeholder="Nilai Sisi">
+                    <button type="button" onclick="calculate()">Hitung</button>
+                    <button type="button" onclick="resetForm()">Reset</button>
+                </div>
+                <div id="calculation-steps"></div>
+            </form>
+
+            <div id="results">
+                <p id="area-result"></p>
+                <p id="perimeter-result"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-</htl>
+
+</html>
